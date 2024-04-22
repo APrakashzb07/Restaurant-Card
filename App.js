@@ -58,7 +58,7 @@ const RestaurantCard = (props) => {
 
     
       return (
-        <div className="res-card" style={{ backgroundColor: "grey" }}>
+        <div className="res-card" style={{ backgroundColor: "#0f0f0f" }}>
           <img
             className="res-logo"
             alt="res-logo"
