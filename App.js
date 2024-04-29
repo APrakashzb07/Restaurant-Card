@@ -65,12 +65,14 @@ const RestaurantCard = (props) => {
             src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
              cloudinaryImageId}
           />
-          <h3>{name}</h3>
-          <h4>{cuisines.join(", ")}</h4>
+        <div className="contant">
+          <h3><b>{name}</b></h3>    
+          <br></br>      
+          <p>{cuisines.join(", ")}</p>
           <h4>{avgRating} Stars</h4>
           <h4>{costForTwo}</h4>
           <h4>{resData.info.sla.deliveryTime} Minutes</h4>
-         
+        </div>    
         </div>
       );
     };
@@ -1899,4 +1901,4 @@ const Applayout = () => {
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Applayout/>);
+root.render(<Applayout />);
